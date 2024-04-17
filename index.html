@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sekiro 2 Video Game First Brainstorm</title>
+        <meta name="author" content="Maasilan Kumaraguru">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1>Sekiro 2 Video Game First Brainstorm</h1>
+            <nav>
+                <ul>
+                    <li><a href="#date">Date</a></li>
+                    <li><a href="#attendace">Attendance</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#unfinished">Unfinished Buisness</a></li>
+                    <li><a href="#new">New Buisness</a></li>
+                    <li><a href="#misc">Misc</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="date">Date</h2>
+            <section>
+                <form onsubmit="alert('Date Recorded!')">
+                    <fieldset>
+                        <label for="date">Enter today's date!</label>
+                        <input type="date" id="date" name="date">
+                        <br>
+                        <button>submit</button>
+                    </fieldset>
+                </form>
+            </section>
+            <hr>
+            <h2 id="attendance">Attendance</h2>
+            <section>
+                <p>Check the box next to someone's name if they <em>are</em> absent before pressing submit!</p>
+                <form onsubmit="alert('Attendance Recorded!')">
+                    <fieldset>
+                        <label for="Hidetaka">Hidetaka Miyazaki</label>
+                        <input type="checkbox" id="Hidetaka" name="Hidetaka_Absent">
+                        <br>
+                        <label for="Shigeru">Shigeru Miyamoto</label>
+                        <input type="checkbox" id="Shigeru" name="Shigeru_Absent">
+                        <br>
+                        <label for="Eiji">Eiji Aonuma</label>
+                        <input type="checkbox" id="Eiji" name="Eiji_Absent">
+                        <br>
+                        <label for="Fumito">Fumito Ueda</label>
+                        <input type="checkbox" id="Fumito" name="Fumito_Absent">
+                        <br>
+                        <label for="Kenji">Kenji Kaido</label>
+                        <input type="checkbox" id="Kenji" name="Kenji_Absent">
+                        <br>
+                        <button>submit</button>
+                    </fieldset>
+                </form>
+            </section>
+            <hr>
+            <h2 id="agenda">Agenda</h2>
+            <section>
+                <ol>
+                    <li>Brainstorm ways we can enhance the parrying game mechanic from <i>Sekiro: Shadows Die Twice</i></li>
+                    <li>Vote on whether or not <i>Sekiro 2</i> should keep the original prosthetics from <i>Sekiro</i>
+                        <br>
+                        <p>What is the general consensus on this matter?</p>
+                        <form onsubmit="alert('Consensus Recorded')">
+                            <fieldset>
+                                <label for="yesProsthetic">Yes!</label>
+                                <input type="radio" id="yesProsthetic" name="yesProsthetic">
+                                <br>
+                                <label for="noProsthetic">No!</label>
+                                <input type="radio" id="noProsthetic" name="noProsthetic">
+                                <br>
+                                <label for="someProsthetic">Some ... </label>
+                                <input type="radio" id="someProsthetic" name="someProsthetic">
+                                <br>
+                                <button>submit</button>
+                            </fieldset>
+                        </form>
+                    </li>
+                    <li>Brainstorm new <span>prosthetics</span> we should add to <i>Sekiro 2</i></li>
+                    <li>Brainstorm boss enemy ideas for <i>Sekiro 2</i></li>
+                </ol>
+            </section>
+            <hr>
+            <h2 id="unfinished">Unfinished Buisness</h2>
+            <section>
+                <p>What should the offical title of <i>Sekiro 2</i> be?</p>
+                <form onsubmit="alert('Name Recorded')">
+                    <fieldset>
+                        <label for="datalistName">Enter Here: </label>
+                        <input list="datalistNames" name="sequelName" id="datalistName">
+                        <datalist id="datalistNames">
+                            <option value="Sekiro: Shadows Die Thrice">Sekiro: Shadows Die Thrice</option>
+                            <option value="Shadow of the Sekiro">Shadow of the Sekiro</option>
+                            <option value="Super Sekiro Galaxy">Super Sekiro Galaxy</option>
+                        </datalist>
+                        <br>
+                        <button>submit</button>
+                    </fieldset>
+                </form>
+            </section>
+            <h2 id="new">New Buisness</h2>
+            <section>
+                <p><strong>Important!</strong> <div>Since a lot of game journalists</div> asked for an easy mode in Sekiro, let's have a vote on this topic!</p>
+                Should we add an easy mode to Sekiro 2? Why or why not?
+
+                <form onsubmit="alert('Response Recorded!')">
+                    <fieldset>
+                        <label for="selectEasy">Should we add an easy mode to Sekiro 2?</label>
+                        <select name="selectEasy" id="selectEasy">
+                            <option value="no">no</option>
+                            <option value="HECK NO!">HECK NO!</option>
+                            <option value="Easy mode? Git gud!">Easy mode? Git gud!</option>
+                        </select>
+                        <br>
+                        <label for="textareaWhy">Why?</label>
+                        <br>
+                        <textarea id="textareaWhy" name="textareaWhy" rows="4" cols="50"></textarea>
+                        <br>
+                        <button>submit</button>
+                    </fieldset>
+                </form>
+            </section>
+            <h2 id="misc">Misc</h2>
+            <h3>Comments, Questions, and Concerns!</h3>
+            <section>
+                <form onsubmit="alert('Response Recorded!')">
+                    <fieldset>
+                        <label for="textareaComments">Enter any of your <b>comments, questions, or concerns</b> ... </label>
+                        <br>
+                        <textarea id="textareaComments" name="textareaComments"></textarea>
+                        <br>
+                        <label for="miscName">Enter name (or leave blank if you would prefer to stay anonymous ... ): </label>
+                        <input type="text" id="miscName" name="miscName">
+                        <br>
+                        <button>submit</button>
+                    </fieldset>
+                </form>
+            </section>
+            <h3>Music Ideas</h3>
+            <section>
+                <audio controls>
+                    <source src="sekiro2MeetingIntro.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+            <h3>Map Design for Boss Arena 1</h3>
+            <section>
+                <details>
+                    <summary>Thought process behind the design</summary>
+                    <p>it looks cool!</p>
+                </details>
+                <img src="sekiro2BossArena.png" alt="A river between two grassy fields with a bridge that crosses it. The boss is on one side of the rider, and the player is on the other side of the river." width="100" height="100">
+            </section>
+            <h3>Recording of Design Process</h3>
+            <section>
+                <video width="100" height="100" controls>
+                    <source src="designingSekiro2BossArena.mp4" type="video/mp4">
+                </video>
+            </section>
+        </main>
+        <footer>
+            <p>Author: Maasilan Kumaraguru</p>
+        </footer>
+    </body>
+</html>
