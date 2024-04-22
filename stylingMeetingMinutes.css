@@ -1,0 +1,28 @@
+/*Class Selector*/
+.firstHeader {
+  color: rgb(1,2,3); /*color with rgb(r,g,b)*/
+}
+/*ID Selector*/
+#dateHeading {
+  color: #123 /*color with hex codes*/
+}
+/*Universal Selector*/
+* {
+  background-color: hsl(1,2,3); /*color with hsl and background color*/
+}
+/*Element Selector*/
+p {
+  border-color: orange; /*color with name and border color*/
+}
+/*Attribute Selector*/
+/*Pseudo-class Selector*/
+/*Selector List*/
+/*Combinators ... */
+/*Descendent Combinator*/
+/*Child Combinator*/
+/*General sibling combinator*/
+/*Adjacent sibling combinator*/
+/*Combining Two Selectors*/
+/*New Selectors*/
+/*:has()*/
+/*Nested Selectors*/
