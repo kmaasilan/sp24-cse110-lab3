@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-website: https://kmaasilan.github.io/Lab2_Starter/
+# Lab 3
+website: https://kmaasilan.github.io/sp24-cse110-lab3
