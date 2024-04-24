@@ -3,11 +3,19 @@
     <head>
         <title>Sekiro 2 Video Game First Brainstorm</title>
         <meta name="author" content="Maasilan Kumaraguru">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylingMeetingMinutes.css">
     </head>
+    <style>
+        em {
+            display: block;
+        }
+    </style>
     <body>
         <header>
-            <h1>Sekiro 2 Video Game First Brainstorm</h1>
+            <h1 class="firstHeader">Sekiro 2 Video Game First Brainstorm</h1>
             <nav>
                 <ul>
                     <li><a href="#dateHeading">Date</a></li>
@@ -15,7 +23,7 @@
                     <li><a href="#agenda">Agenda</a></li>
                     <li><a href="#unfinished">Unfinished Buisness</a></li>
                     <li><a href="#new">New Buisness</a></li>
-                    <li><a href="#misc">Misc</a></li>
+                    <li><a id="specialActive" href="#misc">Misc</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,10 +41,10 @@
             </section>
             <hr>
             <h2 id="attendance">Attendance</h2>
-            <section>
+            <section class="section">
                 <p>Check the box next to someone's name if they <em>are</em> absent before pressing submit!</p>
                 <form>
-                    <fieldset>
+                    <fieldset class="specialSection">
                         <label for="Hidetaka">Hidetaka Miyazaki</label>
                         <input type="checkbox" id="Hidetaka" name="Hidetaka_Absent">
                         <br>
@@ -57,11 +65,11 @@
                 </form>
             </section>
             <hr>
-            <h2 id="agenda">Agenda</h2>
-            <section>
+            <h2 id="agenda" class="section">Agenda</h2>
+            <section class="section">
                 <ol>
                     <li>Brainstorm ways we can enhance the parrying game mechanic from <i>Sekiro: Shadows Die Twice</i></li>
-                    <li>Vote on whether or not <i>Sekiro 2</i> should keep the original prosthetics from <i>Sekiro</i>
+                    <li>Vote on whether or not <i style="display:none;">Sekiro 2</i> should keep the original prosthetics from <i>Sekiro</i>
                         <br>
                         <p>What is the general consensus on this matter?</p>
                         <form>
@@ -85,8 +93,9 @@
             </section>
             <hr>
             <h2 id="unfinished">Unfinished Buisness</h2>
-            <section>
+            <section class="section">
                 <p>What should the offical title of <i>Sekiro 2</i> be?</p>
+                <p>Hmmm ... </p>
                 <form>
                     <fieldset>
                         <label for="datalistName">Enter Here: </label>
@@ -140,26 +149,41 @@
                     </fieldset>
                 </form>
             </section>
-            <h3>Music Ideas</h3>
-            <section>
-                <audio controls>
-                    <source src="sekiro2MeetingIntro.mp3" type="audio/mpeg">
-                </audio>
-            </section>
-            <h3>Map Design for Boss Arena 1</h3>
-            <section>
-                <details>
-                    <summary>Thought process behind the design</summary>
-                    <p>it looks cool!</p>
-                </details>
-                <img src="sekiro2BossArena.png" alt="A river between two grassy fields with a bridge that crosses it. The boss is on one side of the rider, and the player is on the other side of the river." width="300" height="300">
-            </section>
-            <h3>Recording of Design Process</h3>
-            <section>
-                <video width="300" height="300" controls>
-                    <source src="designingSekiro2BossArena.mp4" type="video/mp4">
-                </video>
-            </section>
+            <div>
+                <h3>Music Ideas</h3>
+                <section>
+                    <audio controls>
+                        <source src="sekiro2MeetingIntro.mp3" type="audio/mpeg">
+                    </audio>
+                </section>
+                <h3>Map Design for Boss Arena 1</h3>
+                <section>
+                    <details>
+                        <summary>Thought process behind the design</summary>
+                        <p>it looks cool!</p>
+                    </details>
+                    <img src="sekiro2BossArena.png" alt="A river between two grassy fields with a bridge that crosses it. The boss is on one side of the rider, and the player is on the other side of the river." width="300" height="300">
+                </section>
+                <h3>Recording of Design Process</h3>
+                <section>
+                    <video width="300" height="300" controls>
+                        <source src="designingSekiro2BossArena.mp4" type="video/mp4">
+                    </video>
+                </section>
+            </div>
+            <div class="flex">
+                <p>This</p>
+                <p>Is</p>
+                <p>A<br>Top</p>
+                <p>Flexbox<br>Secret</p>
+            </div>
+            <div class="grid">
+                <p>This</p>
+                <p>Is</p>
+                <p>A</p>
+                <p>Grid</p>
+            </div>
+            <p id="burrito">I had a burrito for breakfast!</p>
         </main>
         <footer>
             <p>Author: Maasilan Kumaraguru</p>

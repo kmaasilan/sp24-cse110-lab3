@@ -1,0 +1,181 @@
+/*Class Selector*/
+
+@media (min-width: 1240px) {
+
+.firstHeader {
+  color: #00f; /*color with rgb(r,g,b)*/
+  text-align: center;
+  text-decoration: wavy underline;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 7cm;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: [colOne] 25em [colTwo] 25em [colThree];
+  grid-template-rows: [rowOne] 50mm [rowTwo] 50mm [rowThree];
+  grid-template-areas: "This Is"
+                       "A Table";
+  margin: 100px 100px 100px 100px;
+}
+
+.specialSection {
+  --specialColor: rgb(90, 90, 148);
+}
+
+/*ID Selector*/
+#dateHeading {
+  color: rgb(125, 206, 159) /*color with hex codes*/
+}
+
+#burrito {
+  color: red;
+  max-width: 10px;
+}
+
+/*Universal Selector*/
+* {
+  background-color: hsl(303, 23%, 34%); /*color with hsl and background color*/
+}
+/*Element Selector*/
+fieldset {
+  border-color: orange; /*color with name and border color*/
+  border-radius: 5px;
+  background-color: var(--specialColor, rgb(179, 127, 136));
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-bottom: 20px;
+}
+
+/*Attribute Selector*/
+[href="#dateHeading"] {
+  color: color(srgb 0.4 0.2 0.0 / 0.75); /*wide gamut 1 for color*/
+}
+/*Pseudo-class Selector*/
+a:hover {
+  color: color-mix(in hsl shorter hue, white 40%, blue 60%); /*wide gamut 2 for color*/
+}
+
+a:active {
+  color: rgb(35, 182, 170);
+}
+
+.jacquard-24-regular {
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Selector List*/
+h1, h2, h3 {
+  font-family: "Jacquard 24";
+  border-style: inset;
+  border-color: red;
+  border-width: thick;
+  min-width: 20cm;
+  position: sticky;
+  top: 5px;
+}
+/*Combinators ... */
+
+
+
+/*Descendent Combinator*/
+
+div section {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  margin-left: 9vw;
+  margin-right: 9vw;
+  padding: 200px 200px 200px 200px;
+}
+
+/*Child Combinator*/
+
+section > p {
+  height: 250px;
+  width: 100px;
+  background-color: gray;
+}
+/*General sibling combinator*/
+
+select ~ label {
+  background-color: white;
+}
+
+/*Adjacent sibling combinator*/
+
+h3 + section {
+  background-color: beige;
+}
+
+p + p {
+  border: 30px groove red;
+}
+
+/*Combining Two Selectors*/
+section.section {
+  background-color: rgb(117, 210, 117);
+  padding-top: 300px;
+  padding-bottom: 300px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/*New Selectors*/
+/*:has()*/
+
+div:has(h3) {
+  border-style: inset;
+  border-top: 15px ridge rgb(90, 90, 238);
+  border-bottom: 15px ridge rgb(83, 144, 220);
+  border-left: 15px ridge rgb(113, 45, 147);
+  border-right: 15px ridge rgb(119, 156, 88);
+}
+
+/*Nested Selectors*/
+
+#specialActive {
+  &:active {
+    background-color: aquamarine;
+  }
+}
+
+}
+
+@media (max-width: 1240px) {
+  fieldset {
+    height: 400px;
+  }
+  fieldset * {
+    font-size: 40px;
+    height: 50px;
+    width: 400px;
+  }
+
+  .flex {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 40px;
+  
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: [colOne] 100px [colTwo] 100px [colThree];
+    grid-template-rows: [rowOne] 50px [rowTwo] 50px [rowThree];
+    grid-template-areas: "This Is"
+                         "A Table";
+    font-size: 20px;
+  }
+}
+
