@@ -1,6 +1,6 @@
 /*Class Selector*/
 
-@media (min-width: 1250px) {
+@media (min-width: 1240px) {
 
 .firstHeader {
   color: #00f; /*color with rgb(r,g,b)*/
@@ -150,7 +150,7 @@ div:has(h3) {
 
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1240px) {
   fieldset {
     height: 400px;
   }
